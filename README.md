@@ -34,22 +34,22 @@ Temporal U-Net with ConvLSTM bottleneck
 
 All models are trained and evaluated on the same train/validation/test split to ensure a fair comparison.
 
-Repository Structure
+## Repository Structure
+
+```text
 SEN12Landslide-Hokkaido-SAR/
 │
 ├── data/               # Dataset access notes and placeholders
 ├── notebooks/          # Jupyter notebooks for preprocessing and training
-│   ├── 01_data_preprocessing_hokkaido.ipynb
-│   └── 02_training_and_evaluation_hokkaido.ipynb
 │
 ├── src/                # (Planned) modular training and model code
 │
 ├── results/
-│   ├── Figures/        # Training curves, PR curves, confusion matrices, qualitative results
+│   ├── Figures/        # Training curves, PR curves, confusion matrices
 │   ├── benchmarks/     # Quantitative results (CSV / JSON)
 │   └── README.md
 │
-└── README.md            # Project overview (this file)
+└── README.md            # Project overview
 
 Results
 
