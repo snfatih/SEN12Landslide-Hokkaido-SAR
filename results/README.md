@@ -12,29 +12,38 @@ and reproducibility.
 
 ---
 
-## Benchmarks
+# Benchmarks
 
-The `benchmarks/` subdirectory includes quantitative evaluation results computed
-on the held-out test set using a fixed decision threshold of **0.5**.
+The `benchmarks/` subdirectory contains quantitative evaluation results computed on the held-out
+test set using a fixed decision threshold of **0.5**.
 
-### Files
+All models are evaluated using identical test data and metrics to ensure a fair comparison.
+
+---
+
+## Files
 
 - `benchmark_master.csv`  
-  Consolidated comparison table summarizing all models, including Dice, Precision,
-  Recall, F1-score, PR-AUC, and inference speed.
+  Consolidated comparison table summarizing all evaluated models, including:
+  Dice coefficient, Precision, Recall, F1-score, PR-AUC, and inference speed.
 
 - `VanillaUNet_benchmark_thr0.5.csv`  
-  Detailed per-metric results for the Vanilla U-Net model.
+  Detailed per-metric evaluation results for the **Vanilla U-Net** model.
 
 - `AttentionUNet_benchmark_thr0.5.csv`  
-  Detailed per-metric results for the Attention U-Net model.
+  Detailed per-metric evaluation results for the **Attention U-Net** model.
 
 - `TemporalUNet_ConvLSTM_benchmark_thr0.5.csv`  
-  Detailed per-metric results for the
+  Detailed per-metric evaluation results for the **Temporal U-Net with ConvLSTM bottleneck** model.
 
-  | Model | Dice | PR-AUC | Notes |
-|------|------|--------|------|
-| Vanilla U-Net | ... | ... | Baseline |
-| Attention U-Net | ... | ... | Better localization |
-| Temporal U-Net | ... | ... | Temporal noise sensitivity |
+---
 
+## Summary (Qualitative Interpretation)
+
+| Model                     | Dice | PR-AUC | Notes |
+|---------------------------|------|--------|-------|
+| Vanilla U-Net             | —    | —      | Baseline segmentation performance |
+| Attention U-Net           | —    | —      | Improved spatial localization and boundary definition |
+| Temporal U-Net (ConvLSTM) | —    | —      | Captures temporal context; sensitive to temporal noise |
+
+Numerical values are reported in the CSV files.
