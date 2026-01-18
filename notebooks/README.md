@@ -1,6 +1,5 @@
 # Notebooks
 
-This directory contains Jupyter notebooks used for:
-- Data exploration
-- Model training
-- Model evaluation and benchmarking
+This folder contains the main experimental notebooks.
+01_* handles preprocessing and dataset preparation.
+02_* includes model training, evaluation, and result generation.
