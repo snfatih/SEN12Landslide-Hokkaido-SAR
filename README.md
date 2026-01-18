@@ -47,40 +47,46 @@ SEN12Landslide-Hokkaido-SAR/
 ```
 ## Results
 
-Quantitative and qualitative results are provided in the results/ directory.
+Quantitative and qualitative results are provided in the `results/` directory.
 
-Quantitative Evaluation
+### Quantitative Evaluation
 
-Dice coefficient
+The evaluation focuses on:
 
-Precision–Recall (PR) AUC
-
-Precision and Recall at threshold 0.5
+- Dice coefficient  
+- Precision–Recall (PR) AUC  
+- Precision and Recall at a fixed threshold of 0.5  
 
 Benchmark results are available as:
 
-Per-model CSV and JSON files
+- Per-model CSV and JSON files  
+- A consolidated `benchmark_master.csv` for cross-model comparison  
 
-A consolidated benchmark_master.csv
+### Qualitative Evaluation
 
-Qualitative Evaluation
+- Visual comparison of predicted landslide masks  
+- Selected examples highlighting false positives and false negatives  
 
-Visual comparison of predicted landslide masks
+See `results/Figures/` and `results/README.md` for details.
 
-Selected examples highlighting false positives and false negatives
-
-See results/Figures/ and results/README.md for details.
 
 Reproducibility
 
 All experiments were conducted using fixed random seeds and identical dataset splits.
-Exact model configurations, thresholds, and evaluation settings are stored in the benchmark files.
-
+Exact model configurations, thresholds, and evaluation settings are stored in the benchmark files to facilitate reproducibility.
 ## References
 
-1. Höhn, P., Zöllner, M., d’Angelo, P., & Wegner, J. D.  
+1. Höhn, P., Zöllner, M., d’Angelo, P., & Wegner, J. D. (2022).  
    **SEN12Landslide: A Benchmark Dataset for Landslide Detection from Multi-Modal Satellite Data**.  
-   IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2022.  
-   Dataset and code available at: https://github.com/PaulH97/Sen12Landslides
+   *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)*.  
+   Dataset and code: https://github.com/PaulH97/Sen12Landslides
 
+2. Nava, L., Giannetti, F., and Moretti, S. (2021).  
+   **Deep Learning for Rapid Landslide Detection Using Synthetic Aperture Radar (SAR) Data**.  
+   *Remote Sensing*, 13(16), 3270.  
+   https://doi.org/10.3390/rs13163270
+
+3. Boehm, J., d’Angelo, P., & Wegner, J. D. (2022).  
+   **Deep Learning for Rapid Landslide Detection Using SAR Datacubes**.  
+   *ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences*.  
 
