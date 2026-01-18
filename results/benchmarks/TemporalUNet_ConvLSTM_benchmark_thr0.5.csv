@@ -1,0 +1,2 @@
+model,threshold,precision,recall,f1_dice,iou,accuracy,tp,fp,fn,tn,pos_pixels,pos_ratio,infer_seconds_total,infer_seconds_per_sample,weights_path,n_samples
+TemporalUNet_ConvLSTM,0.5,0.48599024320508927,0.3924798683868733,0.4342581134485649,0.2773497453050985,0.9254297716864224,54393,57529,84195,1704427,138588,0.07292017443426724,63.35555386543274,2.1846742712218186,/content/drive/MyDrive/attention_unet/results_attention/attn_unet_runs/TemporalUNet_ConvLSTM/20260117_171647/best_TemporalUNet_ConvLSTM.weights.h5,29

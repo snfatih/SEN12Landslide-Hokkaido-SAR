@@ -1,0 +1,2 @@
+model,threshold,precision,recall,f1_dice,iou,accuracy,tp,fp,fn,tn,pos_pixels,pos_ratio,infer_seconds_total,infer_seconds_per_sample,weights_path,n_samples
+AttentionUNet,0.5,0.5203329795374324,0.6084293012382025,0.5609433209153806,0.389799324146284,0.9305472538389009,84321,77731,54267,1684225,138588,0.07292017443426724,51.02472901344299,1.759473414256655,/content/drive/MyDrive/attention_unet/results_attention/attn_unet_runs/AttentionUNet/20260117_180055/best_AttentionUNet.weights.h5,29
