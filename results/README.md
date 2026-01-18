@@ -40,10 +40,23 @@ All models are evaluated using identical test data and metrics to ensure a fair 
 
 ## Summary (Qualitative Interpretation)
 
-| Model                     | Dice | PR-AUC | Notes |
-|---------------------------|------|--------|-------|
-| Vanilla U-Net             | —    | —      | Baseline segmentation performance |
-| Attention U-Net           | —    | —      | Improved spatial localization and boundary definition |
-| Temporal U-Net (ConvLSTM) | —    | —      | Captures temporal context; sensitive to temporal noise |
+## Quantitative Summary (Threshold = 0.5)
 
-Numerical values are reported in the CSV files.
+The table below reports the quantitative performance of all evaluated models on the held-out
+test set using a fixed decision threshold of **0.5**.
+
+| Model                     | Precision | Recall | F1 / Dice | IoU  | Accuracy | Inference Time (s/sample) |
+|---------------------------|-----------|--------|-----------|------|----------|----------------------------|
+| Vanilla U-Net             | 0.51      | 0.61   | 0.56      | 0.39 | 0.93     | **1.61** |
+| Attention U-Net           | **0.52**  | 0.61   | **0.56**  | **0.39** | 0.93 | 1.76 |
+| Temporal U-Net (ConvLSTM) | 0.49      | 0.39   | 0.43      | 0.28 | 0.93     | 2.18 |
+
+### Interpretation
+
+- The **Attention U-Net** slightly outperforms the Vanilla U-Net in terms of Precision and IoU,
+  indicating improved spatial localization due to attention mechanisms.
+- The **Temporal U-Net (ConvLSTM)** shows lower overall performance, likely due to sensitivity
+  to temporal noise and limited temporal context in the SAR time series.
+- The **Vanilla U-Net** provides a strong baseline with the fastest inference time, making it
+  suitable for time-critical disaster response scenarios.
+
