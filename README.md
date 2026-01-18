@@ -1,12 +1,12 @@
-SEN12Landslide-Hokkaido-SAR
-Overview
+## SEN12Landslide-Hokkaido-SAR
+## Overview
 
 This repository presents a comparative study on landslide segmentation using Synthetic Aperture Radar (SAR) data based on the SEN12Landslide dataset, focusing on the Hokkaido (2018 Eastern Iburi Earthquake) subset.
 The project evaluates the performance of three deep learning architectures for pixel-wise landslide detection under severe class imbalance conditions.
 
 The study emphasizes model accuracy, robustness, and the impact of attention and temporal modeling for rapid disaster response scenarios.
 
-Dataset
+## Dataset
 
 We use the SEN12Landslide dataset introduced by Paul et al., which combines multi-modal and multi-temporal satellite observations with pixel-level landslide annotations.
 
@@ -22,7 +22,7 @@ Data format: NetCDF (.nc)
 
 Due to the strong class imbalance and heterogeneous terrain, this subset is particularly suitable for evaluating SAR-based landslide segmentation methods.
 
-Evaluated Models
+## Evaluated Models
 
 The following architectures are implemented and benchmarked:
 
@@ -52,7 +52,7 @@ SEN12Landslide-Hokkaido-SAR/
 └── README.md            # Project overview
 ```
 
-Results
+## Results
 
 Quantitative and qualitative results are provided in the results/ directory.
 
