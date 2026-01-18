@@ -45,7 +45,11 @@ SEN12Landslide-Hokkaido-SAR/
 ├── src/                # (Planned) modular training and model code
 │
 ├── results/
-│   ├── Figures/        # Training curves, PR curves, confusion matrices
+│   ├── Figures/
+│   │   ├── VanillaUNet/
+│   │   ├── AttentionUNet/
+│   │   └── TemporalUNet_ConvLSTM/
+│   │       # Training curves, PR curves, confusion matrices, qualitative examples
 │   ├── benchmarks/     # Quantitative results (CSV / JSON)
 │   └── README.md
 │
