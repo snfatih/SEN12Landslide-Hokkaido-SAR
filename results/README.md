@@ -31,3 +31,10 @@ on the held-out test set using a fixed decision threshold of **0.5**.
 
 - `TemporalUNet_ConvLSTM_benchmark_thr0.5.csv`  
   Detailed per-metric results for the
+
+  | Model | Dice | PR-AUC | Notes |
+|------|------|--------|------|
+| Vanilla U-Net | ... | ... | Baseline |
+| Attention U-Net | ... | ... | Better localization |
+| Temporal U-Net | ... | ... | Temporal noise sensitivity |
+
