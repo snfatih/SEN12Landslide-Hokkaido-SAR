@@ -93,10 +93,4 @@ Exact model configurations, thresholds, and evaluation settings are stored in th
    IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS), 2022.  
    Dataset and code available at: https://github.com/PaulH97/Sen12Landslides
 
-2. Boehm, J., Nava, L., Tasser, E., & Pfeifer, N.  
-   **Deep Learning for Rapid Landslide Detection Using Synthetic Aperture Radar (SAR) Datacubes**.  
-   ISPRS Journal of Photogrammetry and Remote Sensing, 2022.
 
-3. Nava, L., Boehm, J., & Pfeifer, N.  
-   **Operational Landslide Mapping from Multi-Temporal Sentinel-1 SAR Data Using Deep Learning**.  
-   Remote Sensing, 2021.
